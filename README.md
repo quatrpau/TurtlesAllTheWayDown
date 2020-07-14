@@ -1,8 +1,8 @@
 # TurtlesAllTheWayDown
 recursion for zipcoders
 
-It's turtles all the way down. Recursion is a key idea in computer softwaare, 
-and is generally despised in production software. Nonetheless, you need to know it when you se it,
+It's turtles all the way down. Recursion is a key idea in computer software, 
+and is generally despised in production software. Nonetheless, you need to know it when you see it,
 and potentially talk your way around it in interviews.
 
 It is very, very cool though.
