@@ -10,19 +10,19 @@ public class Turtles {
             return multiplier * factorial(multiplier - 1);
         }
     }
-    //one or two must not be 0 //denom always starts at 0
-    public static int greatestCommonDenominator(int one, int two, int denom){
-        if(one == two){
-            return one *
+    // recursive implementation
+    public static int gcd(int p, int q) {
+        if (q == 0) return p;
+        else return gcd(q, p % q);
+    }
+
+    // non-recursive implementation
+    public static int gcd2(int p, int q) {
+        while (q != 0) {
+            int temp = q;
+            q = p % q;
+            p = temp;
         }
-        else if(one % 2 == 0 && two % 2 == 0){
-            return greatestCommonDenominator(one / 2, two / 2, denom + 1);
-        }
-        else if(one % 2 == 0){
-            return greatestCommonDenominator(one /2, two, denom);
-        }
-        else if(two % 2 == 0){
-            return greatestCommonDenominator(one, two/2, denom);
-        }
+        return p;
     }
 }
